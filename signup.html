@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SignUp</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <form action="#" class="signup" onsubmit = "return validate()">
+        <h2>User Sign Up</h2>
+        <br>
+        <div class="signup_c">
+            <label>Username</label>
+            <br>
+            <input type="text" placeholder="Enter UserID" id="username">
+            <br>
+            <br>
+
+            <label>Password</label>
+
+            <div class="wrap">
+                <div class="contain">
+                    <input type="password" placeholder="Enter Password" id="password" oninput="strengthChecker()">
+                    <span id="toggle" onclick="toggle()">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                    <div id="strength-bar"></div>
+                </div>
+                <p id="msg"></p>
+            </div>
+            <!--Script-->
+            <script src="script.js"></script>
+
+            <label>Confirm Password</label>
+            <br>
+            <input type="password" placeholder="Enter Password" id="password">
+            <br>
+            <label for="error" id="error"></label>
+            <br>
+            
+            
+            <label>Email ID</label>
+            <br>
+            <input type="email" placeholder="Enter Your Email-ID" id="email">
+            <br>
+            <br>
+            <label for="error" id="error"></label>
+
+            <div class="container">
+                <label>Phone Number</label>
+                <br>
+			    <input type="text" name="Phone-Number" placeholder="Enter Your Phone Number" class="number">
+			    <h5 class="text">Please Enter Your Phone Number</h5>
+			    <input type="submit" value="Check" class="check">
+		    </div>
+		
+            <br>
+            <br>
+        
+            <!-- <div class="gender">
+                <legend>Choose your gender:</legend>
+            
+                <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+
+                <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                        
+                <input type="radio" name="gender" id="transgender" value="transgender"><label for="female">Transgender</label>
+            
+                <input type="radio" name="gender" id="pnts" value="pnts" checked><label for="pnts">Prefer not to say</label>
+            </div>
+            <br> -->
+        
+            <div>
+                <button id="submit">Sign Up</button>
+            </div>
+            <br>
+            <div class="acc" style="line-height:7px;">
+                <h5>Already have an account?</h5>
+                <br>
+                <a href="login.html"><h5>Login</h5></a>
+            </div>
+        </div>
+    </form>
+    <script src="js/form.js"></script>
+    <script src="js/number.js"></script>
+</body>
+</html>
